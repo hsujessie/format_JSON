@@ -1,0 +1,74 @@
+:root {
+    --cyanBlue: #3498db;
+}
+
+.container  {
+    display: flex;
+    justify-content: center;
+}
+  
+.column {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#origin-json, #formatted-json{
+    width: 500px;
+    border: 2px solid var(--cyanBlue);
+    font-family: monospace, sans-serif;
+    overflow-y: auto;
+    resize: none;
+    word-wrap: break-all;
+}
+
+#origin-json {
+    height: 450px;
+    font-size: 16px;
+}
+
+#formatted-json {
+    height: 800px;
+    font-size: 18px;
+    vertical-align: baseline;
+    line-height: 24px;
+}
+
+#process-btn, .icon-color {
+    cursor: pointer;
+}
+
+#process-btn {
+    display: block;
+    width: 85px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: var(--cyanBlue);
+    color: #fff;
+    border-color: transparent;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.icon-color {
+    color: var(--cyanBlue);
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.content-span {
+    padding-left: 22px;
+    display: block;
+}
+
+.red-number {
+    color : #c40233;
+}
+
+.blue-string {
+    color : var(--cyanBlue);
+}
